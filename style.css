@@ -1,0 +1,130 @@
+html {
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  color: white;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: black;
+}
+
+/* div:nth-child(1) {
+  background-image: url("./images/Space1.gif");
+} */
+
+div:nth-child(2) {
+  background-image: url("./images/andy-holmes-rCbdp8VCYhQ-unsplash.jpg");
+}
+
+div:nth-child(3) {
+  background-image: url("https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2019/06/europe_s_rockets/19421217-6-eng-GB/Europe_s_rockets.jpg");
+}
+
+.background {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background > * {
+  text-shadow: 0 0 5px, 0 0 10px white;
+  font-size: 1.5vw;
+}
+
+.background .rockets-are-coming {
+  bottom: 20%;
+  left: 10%;
+  position: absolute;
+  background-image: none;
+  font-weight: bold;
+}
+
+.word_anim {
+  opacity: 0;
+  animation: float_text 5s;
+  animation-fill-mode: forwards;
+}
+
+.rockets-are-coming > * {
+  margin: 20px 0;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+}
+
+button {
+  height: 50px;
+  width: 10vw;
+  min-width: 100px;
+  background: none;
+  padding: 6px;
+  border: 1px solid white;
+  box-shadow: 0 0 3px, 0 0 6px white;
+  color: white;
+  position: relative;
+  top: 10px;
+  font-family: Arial, Verdana, sans-serif;
+  transition: color 0.5s, background-color 0.5s;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+button:before {
+  opacity: 100%;
+}
+
+.menu {
+  width: 50px;
+  height: 50px;
+  filter: invert(100%);
+  position: relative;
+  top: 10px;
+}
+
+video {
+  height: 100vh;
+  width: 100vw;
+  aspect-ratio: auto;
+  object-fit: cover;
+  transition: opacity 1.5s;
+  background: black;
+}
+
+.fade_anim {
+  opacity: 0%;
+}
+
+@keyframes float_text {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 100%;
+    transform: translateX(20px);
+  }
+}
+
+.the_one {
+  color: black;
+}
+
+.the_one button {
+  box-shadow: 0 0 7 red, 0 0 14 red;
+}
