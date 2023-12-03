@@ -40,24 +40,21 @@
       <div class="rockets-are-coming word_anim the_one">
         <h2>Nevermind</h2>
         <h3>We are all doomed to fall to our rocket overlord</h3>
-        <button style="margin-top: 20px">The one</button>
       </div>
     </div>
 
     <header>
       <img
         class="menu"
-        id="menu"
-        onmouseover="fade(true)"
-        onmouseleave="fade(false)"
+        onclick="toggle_menu()"
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/2048px-Hamburger_icon.svg.png"
         alt="menu"
       />
-      <a href="Rocket.html"><button>Rocket</button></a>
-      <button>a second Rocket</button>
-      <button>another Rocket</button>
-      <button>a slightly bigger Rocket</button>
-      <button>...Car</button>
+      <button class="menu_button" onclick="fly_up()">Rocket</class=button>
+      <button class="menu_button" onclick="fly_down()">a second Rocket</button>
+      <button class="menu_button" onclick="hover()">another Rocket</button>
+      <button class="menu_button">a slightly bigger Rocket</button>
+      <button class="menu_button">...Car</button>
     </header>
   </body>
 </html>

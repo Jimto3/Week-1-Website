@@ -95,6 +95,11 @@ button:before {
   filter: invert(100%);
   position: relative;
   top: 10px;
+  transition: filter 0.25s;
+}
+
+.menu:hover {
+  filter: invert(50%);
 }
 
 video {
@@ -110,6 +115,10 @@ video {
   opacity: 0%;
 }
 
+.menu_button {
+  transition: top 0.5s, bottom 0.5s, color 0.5s, background-color 0.5s;
+}
+
 @keyframes float_text {
   from {
     opacity: 0;
@@ -119,12 +128,4 @@ video {
     opacity: 100%;
     transform: translateX(20px);
   }
-}
-
-.the_one {
-  color: black;
-}
-
-.the_one button {
-  box-shadow: 0 0 7 red, 0 0 14 red;
 }
